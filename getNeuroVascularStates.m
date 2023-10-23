@@ -15,7 +15,7 @@ load([root filesep 'Triggers' filesep sprintf('Run%03i.mat',Run)]);
 load([root 'dataIn.mat']); 
 
 % load signals
-load([data_in '/DataAnalysis/Run0' num2str(Run) '/Signals.mat'])
+load([root '/DataAnalysis/Run0' num2str(Run) '/Signals.mat'])
 jRGECO= rfp_norm;
 GRAB = gfp_normHD;
 
