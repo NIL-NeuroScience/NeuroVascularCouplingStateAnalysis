@@ -247,9 +247,9 @@ save([folder_to_save filesep 'cross_corr_results_' analyse '.mat'],'max_corr_one
 
 %%
 
-NE = gfp_normHD(:,:,corr_time_length/2:fs*2:end);
+NE = gfp_normHD(:,:,fs*corr_time_length/2:fs*2:end);
 NE_size = size(NE,3);
-pupil_diameter = Signals.pupil(corr_time_length/2:fs*2:end);
+pupil_diameter = Signals.pupil(fs*corr_time_length/2:fs*2:end);
 pupil_diam_size = length(pupil_diameter);
 
 pts = [250 125;
